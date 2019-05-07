@@ -11,6 +11,7 @@ module.exports.getter = function(app) {
 module.exports.poster = function(app) {
     app.post("/api/friends", function(req, res) {
         let newFriend = req.body;
+        console.log(newFriend);
 
         let friend;
         let bestScore = 1000000;
@@ -25,7 +26,7 @@ module.exports.poster = function(app) {
             }
 
             if(score < bestScore) {
-                bestFriend = friends.friendsArr[i];
+                friend = friends.friendsArr[i];
             }
         }
 
