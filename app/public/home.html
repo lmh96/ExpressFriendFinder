@@ -1,0 +1,48 @@
+<<!DOCTYPE html>
+    <html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <title>FriendFinder</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-dark bg-dark" style="color: white;">
+                <h1>
+                    FriendFinder
+                </h1>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="jumbotron" style="margin-top: 80px;">
+                    <h1>Welcome to FriendFinder!</h1>
+                    <hr>
+                    <h2>Just answer the questions in the survey, and we will match you with a friend!</h2>
+                    <h3>To continue to the survey click the button below.</h3>
+                    <hr>
+                    <button class="btn btn-primary" id="navToSurvey-btn">Survey</button>
+                </div>
+            </div>
+        </main>
+
+        <footer style="position: fixed; bottom: 0px; width: 100%; padding: 20px; color: lightgray;">
+            <div class="container" style="border-top: 1px solid lightgray;">
+                <a href="/api/friends">API friends list</a> | <a href="https://github.com/lmh96/FriendFinder">Github Repo</a>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById("navToSurvey-btn").onclick = function() {
+                window.location.href = "/survey"
+            }
+        </script>
+    </body>
+
+    </html>
