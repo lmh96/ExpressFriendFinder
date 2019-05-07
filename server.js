@@ -20,6 +20,6 @@ api.poster(app);
 htm.survey(app);
 htm.home(app);
 
-app.listen(PORT || process.env.PORT, function() {
+app.listen(process.env.PORT || PORT, function() {
     console.log("connected to port " + PORT);
 })
