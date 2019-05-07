@@ -1,288 +1,288 @@
 <!DOCTYPE html>
-    <html lang="en" dir="ltr">
+<html lang="en" dir="ltr">
 
-    <head>
-        <meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
 
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <title>FriendFinder</title>
+</head>
 
-        <title>FriendFinder</title>
-    </head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark" style="color: white;">
+            <h2>
+                FriendFinder
+            </h2>
+            <button class="btn btn-light" id="navToHome-btn" onclick="window.location.href ='home.html'">
+                Home
+            </button>
+        </nav>
+    </header>
 
-    <body>
-        <header>
-            <nav class="navbar navbar-dark bg-dark" style="color: white;">
-                <h2>
-                    FriendFinder
-                </h2>
-                <button class="btn btn-light" id="navToHome-btn" onclick="window.location.href ='home.html'">
-                    Home
-                </button>
-            </nav>
-        </header>
-
-        <main>
-            <div class="container" style="margin-top: 80px;">
-                <h1>The Survey</h1>
+    <main>
+        <div class="container" style="margin-top: 80px;">
+            <h1>The Survey</h1>
+            <hr>
+            <h1>About You</h1>
+            <form>
+                <div class="form-group">
+                    <label>
+                        <h2>Your name</h2>
+                    </label>
+                    <input class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                    <label>
+                        <h2>Your picture</h2>
+                    </label>
+                    <input class="form-control" id="picture">
+                </div>
                 <hr>
-                <h1>About You</h1>
-                <form>
-                    <div class="form-group">
-                        <label>
-                            <h2>Your name</h2>
-                        </label>
-                        <input class="form-control" id="name">
-                    </div>
-                    <div class="form-group">
-                        <label>
-                            <h2>Your picture</h2>
-                        </label>
-                        <input class="form-control" id="picture">
-                    </div>
-                    <hr>
-                    <div class="form-group">
-                        <label>
-                            <h2>Question One</h2>
-                        </label><br>
-                        <label>
-                            <h3>Your mind is always buzzing with unexplored ideas and plans.</h3>
-                        </label><br>
-                        <select class="form-control" id="q1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>
-                            <h2>Question Two</h2>
-                        </label><br>
-                        <label>
-                            <h3>Generally speaking, you rely more on your experience than your imagination. </h3>
-                        </label><br>
-                        <select class="form-control" id="q2">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>
-                            <h2>Question Three</h2>
-                        </label><br>
-                        <label>
-                            <h3>You find it easy to stay relaxed and focused even when there is some pressure.
-                            </h3>
-                        </label><br>
-                        <select class="form-control" id="q3">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>
-                            <h2>Question Four</h2>
-                        </label><br>
-                        <label>
-                            <h3>You rarely do something just out of sheer curiosity.
-                            </h3>
-                        </label><br>
-                        <select class="form-control" id="q4">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>
-                            <h2>Question Five</h2>
-                        </label><br>
-                        <label>
-                            <h3>People can rarely upset you.
-                            </h3>
-                        </label><br>
-                        <select class="form-control" id="q5">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>
-                            <h2>Question Six</h2>
-                        </label><br>
-                        <label>
-                            <h3>It is often difficult for you to relate to other people’s feelings.
-                            </h3>
-                        </label><br>
-                        <select class="form-control" id="q6">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>
-                            <h2>Question Seven</h2>
-                        </label><br>
-                        <label>
-                            <h3>In a discussion, truth should be more important than people’s sensitivities.
-                            </h3>
-                        </label><br>
-                        <select class="form-control" id="q7">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>
-                            <h2>Question Eight</h2>
-                        </label><br>
-                        <label>
-                            <h3>You rarely get carried away by fantasies and ideas.
-                            </h3>
-                        </label><br>
-                        <select class="form-control" id="q8">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>
-                            <h2>Question Nine</h2>
-                        </label><br>
-                        <label>
-                            <h3>You think that everyone’s views should be respected regardless of whether they are supported
-                                by facts or not.
-                            </h3>
-                        </label><br>
-                        <select class="form-control" id="q9">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>
-                            <h2>Question Ten</h2>
-                        </label><br>
-                        <label>
-                            <h3>You feel more energetic after spending time with a group of people.
-                            </h3>
-                        </label><br>
-                        <select class="form-control" id="q10">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary" id="submit-btn" style="width: 100%; margin-top: 20px;">
-                        Submit
+                <div class="form-group">
+                    <label>
+                        <h2>Question One</h2>
+                    </label><br>
+                    <label>
+                        <h3>Your mind is always buzzing with unexplored ideas and plans.</h3>
+                    </label><br>
+                    <select class="form-control" id="q1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <h2>Question Two</h2>
+                    </label><br>
+                    <label>
+                        <h3>Generally speaking, you rely more on your experience than your imagination. </h3>
+                    </label><br>
+                    <select class="form-control" id="q2">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <h2>Question Three</h2>
+                    </label><br>
+                    <label>
+                        <h3>You find it easy to stay relaxed and focused even when there is some pressure.
+                        </h3>
+                    </label><br>
+                    <select class="form-control" id="q3">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <h2>Question Four</h2>
+                    </label><br>
+                    <label>
+                        <h3>You rarely do something just out of sheer curiosity.
+                        </h3>
+                    </label><br>
+                    <select class="form-control" id="q4">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <h2>Question Five</h2>
+                    </label><br>
+                    <label>
+                        <h3>People can rarely upset you.
+                        </h3>
+                    </label><br>
+                    <select class="form-control" id="q5">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <h2>Question Six</h2>
+                    </label><br>
+                    <label>
+                        <h3>It is often difficult for you to relate to other people’s feelings.
+                        </h3>
+                    </label><br>
+                    <select class="form-control" id="q6">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <h2>Question Seven</h2>
+                    </label><br>
+                    <label>
+                        <h3>In a discussion, truth should be more important than people’s sensitivities.
+                        </h3>
+                    </label><br>
+                    <select class="form-control" id="q7">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <h2>Question Eight</h2>
+                    </label><br>
+                    <label>
+                        <h3>You rarely get carried away by fantasies and ideas.
+                        </h3>
+                    </label><br>
+                    <select class="form-control" id="q8">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <h2>Question Nine</h2>
+                    </label><br>
+                    <label>
+                        <h3>You think that everyone’s views should be respected regardless of whether they are supported
+                            by facts or not.
+                        </h3>
+                    </label><br>
+                    <select class="form-control" id="q9">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <h2>Question Ten</h2>
+                    </label><br>
+                    <label>
+                        <h3>You feel more energetic after spending time with a group of people.
+                        </h3>
+                    </label><br>
+                    <select class="form-control" id="q10">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit-btn" style="width: 100%; margin-top: 20px;">
+                    Submit
+                </button>
+            </form>
+            <button class="btn btn-primary btn-lg" id="btnTrigger" data-toggle="modal" data-target="#friendsModal" style="display: none;">
+        </div>
+    </main>
+
+    <div class="modal fade" id="friendsModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>We found you a friend!</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
                     </button>
-                </form>
-                <button class="btn btn-primary btn-lg" id="btnTrigger" data-toggle="modal" data-target="#friendsModal" style="display: none;">
-            </div>
-        </main>
+                </div>
+                <div class="modal-body">
+                    <div id="img-div" style="float: left; display: inline-block;">
 
-        <div class="modal fade" id="friendsModal" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3>We found you a friend!</h3>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
                     </div>
-                    <div class="modal-body">
-                        <div id="img-div" style="float: left; display: inline-block;">
+                    <div id="content-div" style="float: left; display: inline-block; margin-left: 10px;">
 
-                        </div>
-                        <div id="content-div" style="float: left; display: inline-block; margin-left: 10px;">
-
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <footer style="margin-top: 20px; padding: 20px;">
-            <div class="container" style="border-top: 1px solid lightgray;">
-                <a href="/api/friends">API friends list</a> | <a href="https://github.com/lmh96/FriendFinder">Github Repo</a>
-            </div>
-        </footer>
+    <footer style="margin-top: 20px; padding: 20px;">
+        <div class="container" style="border-top: 1px solid lightgray;">
+            <a href="/api/friends">API friends list</a> | <a href="https://github.com/lmh96/FriendFinder">Github Repo</a>
+        </div>
+    </footer>
 
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-        <script>
-            document.getElementById("navToHome-btn").onclick = function() {
-                window.location.href = "/"
+    <script>
+        document.getElementById("navToHome-btn").onclick = function() {
+            window.location.href = "/"
+        }
+
+        document.getElementById("submit-btn").onclick = function(event) {
+            event.preventDefault();
+
+            let answers = [];
+
+            answers.push(parseInt(document.getElementById("q1").value));
+            answers.push(parseInt(document.getElementById("q2").value));
+            answers.push(parseInt(document.getElementById("q3").value));
+            answers.push(parseInt(document.getElementById("q4").value));
+            answers.push(parseInt(document.getElementById("q5").value));
+            answers.push(parseInt(document.getElementById("q6").value));
+            answers.push(parseInt(document.getElementById("q7").value));
+            answers.push(parseInt(document.getElementById("q8").value));
+            answers.push(parseInt(document.getElementById("q9").value));
+            answers.push(parseInt(document.getElementById("q10").value));
+
+            let friend = {
+                name: document.getElementById("name").value,
+                photo: document.getElementById("picture").value,
+                answers: answers,
             }
 
-            document.getElementById("submit-btn").onclick = function(event) {
-                event.preventDefault();
+            $.post("/api/friends", friend, function(bestFriend) {
+                $("#img-div").empty();
+                $("#content-div").empty();
 
-                let answers = [];
+                let img = $("<img>");
+                img.attr("src", bestFriend.photo);
+                img.css("height", "150px");
+                img.css("width", "150px");
 
-                answers.push(parseInt(document.getElementById("q1").value));
-                answers.push(parseInt(document.getElementById("q2").value));
-                answers.push(parseInt(document.getElementById("q3").value));
-                answers.push(parseInt(document.getElementById("q4").value));
-                answers.push(parseInt(document.getElementById("q5").value));
-                answers.push(parseInt(document.getElementById("q6").value));
-                answers.push(parseInt(document.getElementById("q7").value));
-                answers.push(parseInt(document.getElementById("q8").value));
-                answers.push(parseInt(document.getElementById("q9").value));
-                answers.push(parseInt(document.getElementById("q10").value));
+                let body = $("<h3>");
+                body.text(bestFriend.name);
 
-                let friend = {
-                    name: document.getElementById("name").value,
-                    photo: document.getElementById("picture").value,
-                    answers: answers,
-                }
+                $("#img-div").append(img);
+                $("#content-div").append(body);
 
-                $.post("/api/friends", friend, function(bestFriend) {
-                    $("#img-div").empty();
-                    $("#content-div").empty();
+                $("#friendsModal").modal("toggle");
+            });
+        }
+    </script>
+</body>
 
-                    let img = $("<img>");
-                    img.attr("src", bestFriend.photo);
-                    img.css("height", "150px");
-                    img.css("width", "150px");
-
-                    let body = $("<h3>");
-                    body.text(bestFriend.name);
-
-                    $("#img-div").append(img);
-                    $("#content-div").append(body);
-
-                    $("#friendsModal").modal("toggle");
-                });
-            }
-        </script>
-    </body>
-
-    </html>
+</html>
