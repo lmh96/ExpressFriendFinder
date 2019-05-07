@@ -29,7 +29,7 @@ module.exports.poster = function(app) {
             }
         }
 
-        friends.add(newFriend);
+        friends.addFriend(newFriend);
         res.json(friend);
     })
 }
